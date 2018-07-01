@@ -2,7 +2,7 @@
 
 namespace Modules\Nintei\Models\Auth\Traits;
 
-use App\Notifications\Frontend\Auth\UserNeedsPasswordReset;
+use Modules\Nintei\Notifications\Frontend\Auth\UserNeedsPasswordReset;
 
 /**
  * Class SendUserPasswordReset.

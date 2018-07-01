@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helpers\Auth;
+namespace Modules\Nintei\Helpers\Auth;
 
 /**
  * Class Auth.
