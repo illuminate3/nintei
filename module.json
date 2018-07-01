@@ -1,0 +1,16 @@
+{
+    "name": "Nintei",
+    "alias": "nintei",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Nintei\\Providers\\NinteiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

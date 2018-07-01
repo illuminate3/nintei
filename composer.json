@@ -1,0 +1,24 @@
+{
+    "name": "illumiante3/nintei-module",
+    "description": "",
+    "type": "laravel-module",
+    "authors": [{
+        "name": "illumiante3",
+        "email": "illuminate3"
+    }],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Nintei\\Providers\\NinteiServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Nintei\\": ""
+        }
+    }
+}
