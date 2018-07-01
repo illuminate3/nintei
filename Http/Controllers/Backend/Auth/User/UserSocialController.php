@@ -1,0 +1,31 @@
+<?php
+
+namespace Modules\Nintei\Http\Controllers\Backend\Auth\User;
+
+use Modules\Nintei\Models\Auth\User;
+use Modules\Nintei\Models\Auth\SocialAccount;
+use App\Http\Controllers\Controller;
+use Modules\Nintei\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use App\Repositories\Backend\Access\User\SocialRepository;
+
+/**
+ * Class UserSocialController.
+ */
+class UserSocialController extends Controller
+{
+    /**
+     * @param ManageUserRequest $request
+     * @param SocialRepository  $socialRepository
+     * @param User              $user
+     * @param SocialAccount     $social
+     *
+     * @return mixed
+     * @throws \App\Exceptions\GeneralException
+     */
+    public function unlink(ManageUserRequest $request, SocialRepository $socialRepository, User $user, SocialAccount $social)
+    {
+        $socialRepository->delete($user, $social);
+
+        return redirect()->back()->withFlashSuccess(__('alerts.backend.users.social_deleted'));
+    }
+}
