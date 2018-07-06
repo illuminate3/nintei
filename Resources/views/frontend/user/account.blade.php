@@ -30,16 +30,16 @@
 
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade show active pt-3" id="profile" aria-labelledby="profile-tab">
-                                @include('frontend.user.account.tabs.profile')
+                                @include('nintei::frontend.user.account.tabs.profile')
                             </div><!--tab panel profile-->
 
                             <div role="tabpanel" class="tab-pane fade show pt-3" id="edit" aria-labelledby="edit-tab">
-                                @include('frontend.user.account.tabs.edit')
+                                @include('nintei::frontend.user.account.tabs.edit')
                             </div><!--tab panel profile-->
 
                             @if ($logged_in_user->canChangePassword())
                                 <div role="tabpanel" class="tab-pane fade show pt-3" id="password" aria-labelledby="password-tab">
-                                    @include('frontend.user.account.tabs.change-password')
+                                    @include('nintei::frontend.user.account.tabs.change-password')
                                 </div><!--tab panel change password-->
                             @endif
                         </div><!--tab content-->

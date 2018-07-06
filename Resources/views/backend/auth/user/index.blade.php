@@ -11,7 +11,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-sm-5">
-                <h4 class="card-title mb-0">sdfasfsafdsf
+                <h4 class="card-title mb-0">
                     {{ __('labels.backend.access.users.management') }} <small class="text-muted">{{ __('labels.backend.access.users.active') }}</small>
                 </h4>
             </div><!--col-->

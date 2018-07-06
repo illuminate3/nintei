@@ -39,18 +39,18 @@ class RoleEventListener
     public function subscribe($events)
     {
         $events->listen(
-            \App\Events\Backend\Auth\Role\RoleCreated::class,
-            'App\Listeners\Backend\Auth\Role\RoleEventListener@onCreated'
+            \Modules\Nintei\Events\Backend\Auth\Role\RoleCreated::class,
+            'Modules\Nintei\Events\Backend\Auth\Role\RoleEventListener@onCreated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\Role\RoleUpdated::class,
-            'App\Listeners\Backend\Auth\Role\RoleEventListener@onUpdated'
+            \Modules\Nintei\Events\Backend\Auth\Role\RoleUpdated::class,
+            'Modules\Nintei\Events\Backend\Auth\Role\RoleEventListener@onUpdated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\Role\RoleDeleted::class,
-            'App\Listeners\Backend\Auth\Role\RoleEventListener@onDeleted'
+            \Modules\Nintei\Events\Backend\Auth\Role\RoleDeleted::class,
+            'Modules\Nintei\Events\Backend\Auth\Role\RoleEventListener@onDeleted'
         );
     }
 }

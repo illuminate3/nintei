@@ -6,7 +6,10 @@
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Nintei\\Providers\\NinteiServiceProvider"
+        "Modules\\Nintei\\Providers\\NinteiServiceProvider",
+        "Modules\\Nintei\\Providers\\RouteServiceProvider",
+        "Modules\\Nintei\\Providers\\NinteiEventServiceProvider",
+        "Modules\\Nintei\\Providers\\NinteiObserverServiceProvider"
     ],
     "aliases": {},
     "files": [

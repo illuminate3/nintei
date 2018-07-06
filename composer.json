@@ -6,6 +6,9 @@
         "name": "illumiante3",
         "email": "illuminate3"
     }],
+    "require": {
+        "spatie/laravel-permission": "^2.5"
+    },
     "extra": {
         "laravel": {
             "providers": [

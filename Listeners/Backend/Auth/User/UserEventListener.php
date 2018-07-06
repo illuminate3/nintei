@@ -103,58 +103,58 @@ class UserEventListener
     public function subscribe($events)
     {
         $events->listen(
-            \App\Events\Backend\Auth\User\UserCreated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onCreated'
+            \Modules\Nintei\Events\Backend\Auth\User\UserCreated::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onCreated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserUpdated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onUpdated'
+            \Modules\Nintei\Events\Backend\Auth\User\UserUpdated::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onUpdated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserDeleted::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onDeleted'
+            \Modules\Nintei\Events\Backend\Auth\User\UserDeleted::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onDeleted'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserConfirmed::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onConfirmed'
+            \Modules\Nintei\Events\Backend\Auth\User\UserConfirmed::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onConfirmed'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserUnconfirmed::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onUnconfirmed'
+            \Modules\Nintei\Events\Backend\Auth\User\UserUnconfirmed::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onUnconfirmed'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserPasswordChanged::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onPasswordChanged'
+            \Modules\Nintei\Events\Backend\Auth\User\UserPasswordChanged::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onPasswordChanged'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserDeactivated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onDeactivated'
+            \Modules\Nintei\Events\Backend\Auth\User\UserDeactivated::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onDeactivated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserReactivated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onReactivated'
+            \Modules\Nintei\Events\Backend\Auth\User\UserReactivated::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onReactivated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserSocialDeleted::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onSocialDeleted'
+            \Modules\Nintei\Events\Backend\Auth\User\UserSocialDeleted::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onSocialDeleted'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserPermanentlyDeleted::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onPermanentlyDeleted'
+            \Modules\Nintei\Events\Backend\Auth\User\UserPermanentlyDeleted::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onPermanentlyDeleted'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserRestored::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onRestored'
+            \Modules\Nintei\Events\Backend\Auth\User\UserRestored::class,
+            'Modules\Nintei\Events\Backend\Auth\User\UserEventListener@onRestored'
         );
     }
 }

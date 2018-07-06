@@ -7,7 +7,7 @@
     <div class="card-body">
         <div class="row">
             <div class="col-sm-5">
-                <h4 class="card-title mb-0">asdfsadfdsfdsa
+                <h4 class="card-title mb-0">
                     {{ __('labels.backend.access.roles.management') }}
                 </h4>
             </div><!--col-->

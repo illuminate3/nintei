@@ -55,28 +55,28 @@ class UserEventListener
     public function subscribe($events)
     {
         $events->listen(
-            \App\Events\Frontend\Auth\UserLoggedIn::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onLoggedIn'
+            \Modules\Nintei\Events\Frontend\Auth\UserLoggedIn::class,
+            'Modules\Nintei\Listeners\Frontend\Auth\UserEventListener@onLoggedIn'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserLoggedOut::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onLoggedOut'
+            \Modules\Nintei\Events\Frontend\Auth\UserLoggedOut::class,
+            'Modules\Nintei\Listeners\Frontend\Auth\UserEventListener@onLoggedOut'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserRegistered::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onRegistered'
+            \Modules\Nintei\Events\Frontend\Auth\UserRegistered::class,
+            'Modules\Nintei\Listeners\Frontend\Auth\UserEventListener@onRegistered'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserProviderRegistered::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onProviderRegistered'
+            \Modules\Nintei\Events\Frontend\Auth\UserProviderRegistered::class,
+            'Modules\Nintei\Listeners\Frontend\Auth\UserEventListener@onProviderRegistered'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserConfirmed::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onConfirmed'
+            \Modules\Nintei\Events\Frontend\Auth\UserConfirmed::class,
+            'Modules\Nintei\Listeners\Frontend\Auth\UserEventListener@onConfirmed'
         );
     }
 }
